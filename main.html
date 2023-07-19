@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body >
+    <div class="body_container">
+    <my-header></my-header>
+    <main>
+        <div class="main">
+            <div class="search">
+                <input type="search" name="msearch" id="msearch">
+                <button type="submit" id="searchbutton">search</button>
+            </div>
+            <div class="category">
+                <h1 class="category_heading">Category</h1>
+                <ul class="categoory_types">
+                    <li><a href="#veg" onclick="resetMenu()">veg</a></li>
+                    <li><a href="#nonveg" onclick="resetMenu()">nonveg</a></li>
+                    <li><a href="#sweet" onclick="resetMenu()">sweet</a></li>
+                    <li><a href="#snack" onclick="resetMenu()">snacks</a></li>
+                </ul>    
+            </div>
+            
+            <div class="template">
+                <template id="card__template">
+                    <div class="card">
+                      <table>
+                        <tr>
+                          <td>
+                            <img src="" alt="Avatar" />
+                          </td>
+                          <td>
+                            <h4><b class="card__name">name</b></h4>
+                          </td>
+                          <td>
+                            <p class="card__details">details</p>
+                          </td>
+                          <td>
+                            <p>$<span class="card__price">price</span></p>
+                          </td>
+                          <td> 
+                            <button class="card__button">Add</button>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </template>
+                                    
+                <h1 id="veg" class="template_heading">veg</h1>
+                <section id="veg-container" class="template-container">    
+                </section>
+
+                <h1 id="nonveg" class="template_heading">non veg</h1>
+                <section id="nonveg-container" class="template-container">
+                </section>
+                
+                <h1 id="snack" class="template_heading">snacks</h1>
+                <section id="snack-container" class="template-container">  
+                </section>
+
+                <h1 id="sweet" class="template_heading">sweet</h1>
+                <section id="sweet-container" class="template-container">
+                   
+                </section>
+            </div>  
+        </div>  
+    </main>
+    <my-footer></my-footer>
+    <script type=module src="template.js"></script>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>

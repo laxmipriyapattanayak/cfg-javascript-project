@@ -15,6 +15,8 @@ const cartContainer = document.querySelector(".cart__container")
 // })
 
 carts.map((cart)=> {
+    /* find how many duplicate datas are there inside carts array and add a quantity property and  total price 
+    property to the array carts and calculating total price  */
     const duplicate = carts.filter((item)=> item.id === cart.id)
     return {...cart, qty: duplicate.length, totalPrice: cart.price * duplicate.length }
 }).reduce((acc,curValue)=>{
@@ -32,3 +34,13 @@ carts.map((cart)=> {
 
     cartContainer.appendChild(cartLine)
 })
+
+//calculate subtotal
+let subtotal=0
+carts.map((cart) => {
+    subtotal+= cart.price;
+})
+const totalAmount = document.querySelector("#total_amount");
+totalAmount.textContent = subtotal;
+
+

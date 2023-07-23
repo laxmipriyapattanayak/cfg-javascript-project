@@ -57,6 +57,22 @@
     color: var(--color);
     font-weight:bold;
 }
+.shopping_cart{
+  position: relative;
+  
+  padding: 5px;
+  
+}
+.cart__count{
+  font-size: 15px;
+  position: absolute;
+  top: -15px;
+  right: -7px; 
+  background-color: #1F1817; 
+  border-radius: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 3px;
+}
   
 
   footer{
@@ -93,9 +109,9 @@
     padding: 10px;
     margin-right: 10px;
     border-radius: 5px;
-    /* Adjust the width as needed */
     width: 300px;
     background-color: var(--background-color);
+    color:var(--color);
   }
   
   .search button {

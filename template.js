@@ -14,7 +14,13 @@ class MyHeader extends HTMLElement{
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#"><i class="fa-solid fa-heart" style="color: #a18f61;"></i></a></li>
+                <li><div class="shopping_cart">
+                    <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping" style="color: #a18f61";></i>
+                    <div class="cart__count">0</div>
+                    </a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -41,3 +47,6 @@ class MyFooter extends HTMLElement{
     }
 }
 customElements.define('my-footer',MyFooter);
+
+const cartCount = document.querySelector(".cart__count");
+cartCount.textContent = localStorage.getItem('count');

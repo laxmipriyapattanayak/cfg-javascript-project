@@ -207,6 +207,10 @@ const nonveg = document.getElementById("nonveg");
 const snack = document.getElementById("snack");
 const sweet = document.getElementById("sweet");
 
+const localStorageCart = localStorage.getItem('cart');
+const cart =  localStorageCart ? JSON.parse(localStorageCart) : [];
+
+
 const displayMenu = (menus) => {
 
     vegContainer.innerHTML = "";
@@ -220,7 +224,17 @@ const displayMenu = (menus) => {
         card.querySelector('.card__details').textContent = menu.details;
         card.querySelector('.card__price').textContent = menu.price;
         card.querySelector('img').src = menu.image;
-    
+        
+        const button = card.querySelector('.card__button');
+        button.addEventListener("click",() => {
+            cart.push(menu);
+            const cartCount = document.querySelector(".cart__count");
+            
+            localStorage.setItem('cart',JSON.stringify(cart));
+            localStorage.setItem('count',cart.length);
+            cartCount.textContent = localStorage.getItem('count');
+        })
+        
         if (menu.category === 'Veg') {
             vegContainer.appendChild(card);
         } else if (menu.category === 'nonVeg') {
@@ -230,8 +244,6 @@ const displayMenu = (menus) => {
         } else if (menu.category === 'snacks') {
             snackContainer.appendChild(card);
         }
-
-    
     })
 
     vegContainer.childElementCount === 0 ? document.querySelector('#veg').style.display = "none" : document.querySelector('#veg').style.display = "block"
@@ -239,8 +251,11 @@ const displayMenu = (menus) => {
     sweetContainer.childElementCount === 0 ? document.querySelector('#snack').style.display = "none" : document.querySelector('#snack').style.display = "block"
     snackContainer.childElementCount === 0 ? document.querySelector('#sweet').style.display = "none" : document.querySelector('#sweet').style.display = "block"
 }
+
 displayMenu(menus);
 
+
+localStorage.setItem('cart',JSON.stringify(cart));
 const searchInput = document.getElementById("msearch");
 const search = document.getElementById("searchbutton");
 
@@ -253,11 +268,12 @@ const searchMenu = (menus,searchTerm) => {
     const searchTerm = searchInput.value.toLowerCase().trim();
     const filtermenu=searchMenu(menus,searchTerm);
     displayMenu(filtermenu);
+    searchInput.value = "";
+
  });
 
  const resetMenu = () => {
     displayMenu(menus);
  }
-
 
 

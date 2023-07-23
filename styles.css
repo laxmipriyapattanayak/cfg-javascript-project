@@ -37,6 +37,22 @@ body{
     left:0;
     position: fixed;
 }
+.shopping_cart{
+    position: relative;
+    
+    padding: 5px;
+    
+}
+.cart__count{
+    font-size: 15px;
+    position: absolute;
+    top: -15px;
+    right: -7px; 
+    background-color: #1F1817; 
+    border-radius: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
 
 .menu {
     display: flex;

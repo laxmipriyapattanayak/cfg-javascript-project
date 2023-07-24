@@ -4,6 +4,7 @@
     list-style-type: none;
     margin: 0;
     text-decoration: none;
+    color: var(--color);
     
   }
   
@@ -13,7 +14,7 @@
   }
   
   body {
-   /* background-color: #1f1817;*/
+    background-color: #1f1817;
     margin: 0;
   }
   
@@ -74,7 +75,8 @@
   padding: 3px;
 }
 .sub_total{
-    margin: 5rem;
+    margin-top: 7rem;
+    text-align: center;
 }
 
 .cart_line{
@@ -90,6 +92,9 @@ img{
   border-radius: 50%;
   object-fit: cover;
   margin-right: 10px;
+}
+button{
+    background-color: #1F1817; 
 }
   
 

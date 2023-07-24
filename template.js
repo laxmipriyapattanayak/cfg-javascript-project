@@ -33,7 +33,7 @@ class MyFooter extends HTMLElement{
     connectedCallback(){
         this.innerHTML=`
         <footer>
-        &copy; Authentic India
+        &copy; code by Laxmi,Nithya and Sukla 
         <i class="fa-solid fa-phone" ><span>&nbsp +4571357415</span><br></i>
             
         <ul class="menu">

@@ -1,8 +1,8 @@
 const menus = [
     {
         id: 1,
-        name: "AloovGobi",
-        details: "yet to fill",
+        name: "Aloo Gobi",
+        details: "A flavorful vegetarian dish with potatoes and cauliflower, seasoned with Indian spices.",
         price: 40,
         category: "Veg",
         image: "images/veg/aloo_gobi.avif"
@@ -10,7 +10,7 @@ const menus = [
     {
         id: 2,
         name: "Butter Paneer",
-        details: "yet to fill",
+        details: "A delightful Indian curry featuring paneer (Indian cottage cheese) cooked in a creamy and aromatic tomato-based sauce, seasoned with spices and a touch of butter.",
         price: 70,
         category: "Veg",
         image: "images/veg/butter_paneer.avif"
@@ -18,7 +18,7 @@ const menus = [
     {
         id: 3,
         name: "Daal Makhni",
-        details: "yet to fill",
+        details: "A classic Indian lentil dish made with black lentils and kidney beans, simmered in a rich and flavorful tomato-based sauce, finished with cream and aromatic spices.",
         price: 90,
         category: "Veg",
         image: "images/veg/daal_makhni.avif"
@@ -26,7 +26,7 @@ const menus = [
     {
         id: 4,
         name: "Palak Paneer",
-        details: "yet to fill",
+        details: "A delectable vegetarian dish featuring paneer (Indian cottage cheese) cooked in a creamy spinach gravy, seasoned with aromatic spices.",
         price: 190,
         category: "Veg",
         image: "images/veg/palak_paneer.avif"
@@ -34,7 +34,7 @@ const menus = [
     {
         id: 5,
         name: "Rajma Chawal",
-        details: "yet to fill",
+        details: "A comforting North Indian dish with red kidney beans cooked in a flavorful tomato-based gravy, served with steamed rice.",
         price: 270,
         category: "Veg",
         image: "images/veg/rajma_chawal.avif"
@@ -42,7 +42,7 @@ const menus = [
     {
         id: 6,
         name: "Veg Pulav",
-        details: "yet to fill",
+        details: "A fragrant rice dish cooked with a medley of colorful vegetables and aromatic spices, offering a delightful and wholesome flavor.",
         price: 170,
         category: "Veg",
         image: "images/veg/veg_pulao.avif",
@@ -51,7 +51,7 @@ const menus = [
     {
         id: 7,
         name: "Butter Chicken",
-        details: "yet to fill",
+        details: "Tender chicken cooked in creamy buttery tomato gravy.",
         price: 170,
         category: "nonVeg",
         image: "images/nonveg/butter_chicken.avif",
@@ -59,7 +59,7 @@ const menus = [
     {
         id: 8,
         name: "Chicken Curry",
-        details: "yet to fill",
+        details: "Juicy chicken pieces simmered in aromatic spices and rich curry sauce.",
         price: 170,
         category: "nonVeg",
         image: "images/nonveg/chicken_curry.avif",
@@ -67,7 +67,7 @@ const menus = [
     {
         id: 9,
         name: "Fish Curry",
-        details: "yet to fill",
+        details: "Tender fish fillets cooked in a flavorful blend of spices and coconut milk.",
         price: 170,
         category: "nonVeg",
         image: "images/nonveg/fish_curry.avif",
@@ -75,7 +75,7 @@ const menus = [
     {
         id: 10,
         name: "Tawa Fish Fry",
-        details: "yet to fill",
+        details: "pan-fried marinated fish and serve with fresh mint chutney",
         price: 170,
         category: "nonVeg",
         image: "images/nonveg/fish_fry.avif",
@@ -83,7 +83,7 @@ const menus = [
     {
         id: 11,
         name: "Mutton Handi",
-        details: "yet to fill",
+        details: "Tender mutton cooked in a rich and aromatic gravy, simmered to perfection in a traditional handi pot.",
         price: 170,
         category: "nonVeg",
         image: "images/nonveg/mutton_handi.avif",
@@ -91,7 +91,7 @@ const menus = [
     {
         id: 12,
         name: "Prawn Curry",
-        details: "yet to fill",
+        details: " prawns cooked in a flavorful curry, infused with aromatic spices for a delightful taste",
         price: 170,
         category: "nonVeg",
         image: "images/nonveg/prawn_curry.avif",

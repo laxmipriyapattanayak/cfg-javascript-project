@@ -33,14 +33,39 @@ class MyFooter extends HTMLElement{
     connectedCallback(){
         this.innerHTML=`
         <footer>
-        &copy; code by Laxmi,Nithya and Sukla 
-        <i class="fa-solid fa-phone" ><span>&nbsp +4571357415</span><br></i>
+        <div class="footer_container">
+            <div class="footer_div">
+                <h3 class="footer_heading">More about us</h3>
+            <p class="footer_paragraph">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Repellendus, dolores 
+                accusamus magnam qui, 
+                libero maiores sit nam autem, 
+                doloremque voluptates natus optio 
+                velit itaque pariatur molestiae! Perferendis ad optio dolor?
+            </P>
+            </div>
+            <div class="footer_div">
+                <h3 class="footer_heading">keep contacted</h3>
+                <ul class="footer_list">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i>&nbsp &nbsp Like us on Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i>&nbsp &nbspFollow us on Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i>&nbsp &nbspFollow us on Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer_div">
+                <h3 class="footer_heading">Contact Information</h3>
+                <ul class="footer_list">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Authentic India</a></li>
+                    <li><a href="#"><i class="fa-solid fa-mobile-screen"></i>1234567890</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i>contactus@example.com</a></li>
+                </ul>
+            </div>
+        </div>
+         
+
             
-        <ul class="menu">
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-        </ul>
+        
 
     </footer>
         `

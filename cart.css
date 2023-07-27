@@ -52,3 +52,20 @@ button{
 button i{
     color: #1F1817; 
 }
+
+@media screen and (max-width: 480px) {
+    .sub_total {
+      margin-top: 5rem; 
+    }
+    
+    .cart_line {
+      flex-direction: column; 
+      text-align: center; 
+    }
+    
+    img {
+      width: 80px; /* Increase the image size for better visibility */
+      height: 80px;
+      margin-right: 0; /* Remove the right margin to center the image */
+    }
+  }

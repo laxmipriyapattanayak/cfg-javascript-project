@@ -110,3 +110,56 @@ footer {
       text-align: center;
     }
   }
+
+  /* Existing CSS */
+
+/* ... */
+
+/* Media Query for Smaller Screens (min-width: 280px) and (max-width: 653px) */
+@media screen and (min-width: 280px) and (max-width: 653px) {
+    .navbar {
+      padding: 10px; /* Adjust the padding of the navbar on small screens */
+    }
+    
+    .shopping_cart {
+      padding: 3px; /* Adjust the padding of the shopping cart on small screens */
+    }
+    
+    .cart__count {
+      font-size: 12px; /* Adjust the font size of the cart count on small screens */
+      top: -10px; /* Adjust the position of the cart count on small screens */
+      right: -5px;
+    }
+    
+    .menu li {
+      margin-right: 5px; /* Reduce the margin-right for menu items on small screens */
+    }
+    
+    .menu li a {
+      font-size: 14px; /* Adjust the font size of the menu items on small screens */
+    }
+    
+    #logo_text {
+      font-size: 18px; /* Adjust the font size of the logo text on small screens */
+    }
+    
+    footer {
+      margin-top: 2rem; /* Reduce the margin-top for the footer on small screens */
+    }
+    
+    .footer_container {
+      max-width: 100%; /* Adjust the maximum width of the footer container on small screens */
+      padding: 0 10px; /* Add padding to the footer container on small screens */
+    }
+    
+    .footer_div {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 10px; /* Add margin between footer sections on small screens */
+    }
+    
+    .footer_heading {
+      font-size: 18px; /* Adjust the font size of the footer headings on small screens */
+    }
+  }
+  

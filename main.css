@@ -220,6 +220,9 @@ table{
     max-width: 100%;
     justify-content: center; 
   }
+  .categoory_types li {
+    margin: 0px;
+  }
   .card {
     width: 90%;
     max-width: 300px; 
@@ -250,4 +253,71 @@ table{
   }
 }
 
+@media screen and (min-width: 280px) and (max-width: 653px) {
+  /* Styles for screens with width between 280px and 653px */
   
+  .main_container {
+    padding: 10px; /* Adjust the padding for better spacing on small screens */
+  }
+  
+  .navbar {
+    width: 100%;
+    padding: 10px; /* Adjust the padding of the navbar on small screens */
+  }
+  
+  .menu {
+    gap: 10px; /* Reduce the gap between menu items on small screens */
+  }
+  
+  .menu li {
+    margin-right: 5px; /* Reduce the margin-right for menu items on small screens */
+  }
+  
+  #logo_text {
+    font-size: 18px; /* Adjust the font size of the logo text on small screens */
+  }
+  
+  .shopping_cart {
+    padding: 3px; /* Adjust the padding of the shopping cart on small screens */
+  }
+  
+  .cart__count {
+    font-size: 12px; /* Adjust the font size of the cart count on small screens */
+    top: -10px; /* Adjust the position of the cart count on small screens */
+    right: -5px;
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    
+  }
+  .categoory_types{
+    width:100%;
+    margin: 0px;
+  } 
+  
+  .template_heading {
+    font-size: 20px; /* Adjust the font size of the template heading on small screens */
+  }
+  
+  .template-container {
+    justify-content: center; /* Center the template items on small screens */
+  }
+  
+  .card {
+    width: 100%;
+     /* Adjust the maximum width of the cards on small screens */
+  }
+  
+  .card img {
+    height: auto;
+    max-height: 250px; /* Adjust the maximum height of the images on small screens */
+  }
+  
+  .card__button {
+    font-size: 14px; /* Adjust the font size of the card buttons on small screens */
+  }
+}

@@ -69,3 +69,28 @@ button i{
       margin-right: 0; /* Remove the right margin to center the image */
     }
   }
+  /* Existing CSS */
+
+/* ... */
+
+@media screen and (min-width: 280px) and (max-width: 653px) {
+    .sub_total {
+      margin-top: 6rem; /* Adjust the margin-top for the sub_total on small screens */
+    }
+    
+    .cart_line {
+      flex-direction: column; /* Stack the elements vertically on small screens */
+      text-align: center; /* Center the elements */
+    }
+    
+    img {
+      width: 60px; /* Adjust the image size for better visibility on small screens */
+      height: 60px;
+      margin-right: 0; /* Remove the right margin to center the image */
+    }
+    
+    button {
+      font-size: 16px; /* Adjust the font size of buttons on small screens */
+    }
+  }
+  

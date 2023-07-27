@@ -26,7 +26,7 @@ const displayCart = (()=>{
         cartLine.querySelector("#item_price").textContent = `$${c.price}`;
         cartLine.querySelector("#item_quantity").textContent = c.qty;
         cartLine.querySelector("#total").textContent = `$${c.totalPrice}`;
-
+        cartLine.querySelector('img').src = c.image;
         const deleteButton = cartLine.querySelector("#delete");
         deleteButton.addEventListener("click", () => {
             removeItemFromCart(c.id);

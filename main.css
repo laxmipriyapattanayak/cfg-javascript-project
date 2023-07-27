@@ -218,20 +218,17 @@ table{
 @media screen and (max-width: 768px) {
   .template-container {
     max-width: 100%;
-    justify-content: center; /* Center the cards on small screens */
+    justify-content: center; 
   }
   .card {
     width: 90%;
-    max-width: 300px; /* Optionally set a maximum width for the cards */
-    /* Add a border to create the card effect */
-    border-radius: 10px; /* Round the corners of the cards */
-    margin: 10px; /* Add some spacing between the cards */
+    max-width: 300px; 
+    border-radius: 10px; 
+    margin: 10px;
   }
   .card img {
-    /* Adjust the width to fill the container */
-    height: auto; /* Allow the height to adjust proportionally */
-    /* Set a maximum width to avoid overly large images */
-    max-height: 500px; /* Set a maximum height to limit the image size */
+    height: auto; 
+    max-height: 500px; 
     margin-right: 0; 
   }
   .card__content {

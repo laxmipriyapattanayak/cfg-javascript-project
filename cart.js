@@ -23,9 +23,9 @@ const displayCart = (()=>{
 
         const cartLine = document.importNode(cartTemplate.content, true);
         cartLine.querySelector("#item_name").textContent = c.name;
-        cartLine.querySelector("#item_price").textContent = c.price;
+        cartLine.querySelector("#item_price").textContent = `$${c.price}`;
         cartLine.querySelector("#item_quantity").textContent = c.qty;
-        cartLine.querySelector("#total").textContent = c.totalPrice;
+        cartLine.querySelector("#total").textContent = `$${c.totalPrice}`;
 
         const deleteButton = cartLine.querySelector("#delete");
         deleteButton.addEventListener("click", () => {

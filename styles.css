@@ -88,8 +88,32 @@ p {
     width: 300px;
     margin: auto 5px;
     
+}
+@media screen and (max-width: 768px) {
+    .main_container {
+      padding: 20px; 
+    }
+    
+    ._heading {
+      margin-top: 3rem; 
+    }
+    
+    .main {
+      flex-direction: column; 
+      margin-left: 0;
+    }
+    
+    .main_text {
+      width: 80%; 
+      font-size: 20px; 
+      padding: 2rem; 
+    }
+    
+    p {
+      width: 100%; 
+      margin: 10px 2px; 
+    }
   }
-
 
   
   
